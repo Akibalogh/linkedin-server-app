@@ -20,7 +20,7 @@ function onLinkedInLogout() {
 function onLinkedInLogin() {
   // we pass field selectors as a single parameter (array of strings)
   IN.API.Profile("me")
-    .fields(["id", "firstName", "lastName", "pictureUrl", "publicProfileUrl"])
+    .fields(["id", "firstName", "lastName", "industry", "pictureUrl", "publicProfileUrl"])
     .result(function(result) {
       setLoginBadge(result.values[0]);
     })
@@ -34,11 +34,10 @@ function setLoginBadge(profile) {
     profHTML = "<p>You are not logged in</p>";
   }
   else {
-    var pictureUrl = profile.pictureUrl || "http://static02.linkedin.com/scds/common/u/img/icon/icon_no_photo_80x80.png";
-    profHTML = "<p><a href=\"" + profile.publicProfileUrl + "\">";
-    profHTML = profHTML + "<img align=\"baseline\" src=\"" + pictureUrl + "\"></a>";      
-    profHTML = profHTML + "&nbsp; Welcome <a href=\"" + profile.publicProfileUrl + "\">";
-    profHTML = profHTML + profile.firstName + " " + profile.lastName + "</a>! <a href=\"#\" onclick=\"IN.User.logout(); return false;\">logout</a></p>";
+    profHTML = "Your name: " + profile.firstName + profile.lastName + "<br>";
+    profHTML += "Your ID: " + profile.id + "<br>";
+    profHTML += "Your industry: " + profile.industry + "<br>";
+    profHTML += "<a href=\"#\" onclick=\"IN.User.logout(); return false;\">logout</a></p>";
   }
   document.getElementById("loginbadge").innerHTML = profHTML;
 }
