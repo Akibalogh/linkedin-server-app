@@ -20,17 +20,17 @@ public class LinkedInLogin extends HttpServlet {
         PrintWriter out = response.getWriter();
         out.println("<html>");
         out.println("<head>");
-        out.println("<script type='text/javascript' src='http://platform.linkedin.com/in.js'>");
-        out.println("api_key: 34eiwzgyjlyn </script>");
+        //out.println("<script type='text/javascript' src='http://platform.linkedin.com/in.js'>");
+        //out.println("api_key: 34eiwzgyjlyn </script>");
         out.println("</head>");
         out.println("<body>");
-        out.println("<script type='in/Login'>");
-        out.println("Hello, <?js= firstName ?> <?js= lastName ?>.");
-        out.println("</script>");
+        //out.println("<script type='in/Login'>");
+        //out.println("Hello, <?js= firstName ?> <?js= lastName ?>.");
+        //out.println("</script>");
  
-        out.println("<script type='IN/Login' data-onAuth='demoLoginTagAuthCapture' data-onLogout='demoLoginTagLogoutCapture'>");
+        //out.println("<script type='IN/Login' data-onAuth='demoLoginTagAuthCapture' data-onLogout='demoLoginTagLogoutCapture'>");
         out.println("<p>You are logged in and authorized.</p>");
-        out.println("</script>");
+        //out.println("</script>");
         
         
     	/* OAuthService service = new ServiceBuilder()
