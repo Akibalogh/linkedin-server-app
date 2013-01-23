@@ -55,14 +55,15 @@
     		<artifactId>tomcat7-maven-plugin</artifactId>
     		<version>2.0</version>
     		<configuration>
-    			<url>http://localhost:8080/manager/text</url>
+    			<url>https://localhost:8443/manager/text</url>
       			<update>true</update>
-                <warFile>target/${project.artifactId}.war</warFile>
-    			<warSourceDirectory>
-            		${project.build.directory}/${project.build.finalName}
-          		</warSourceDirectory>
-      
+                <!--	<warFile>/usr/share/tomcat7/webapps/ROOT/${project.artifactId}.war</warFile>
+    			<warSourceDirectory>/usr/share/tomcat7/webapps/ROOT/${project.build.finalName}</warSourceDirectory>
+      -->
                 <path>/${project.artifactId}</path>
+		<warFile>target/${project.artifactId}.war</warFile>
+		<warSourceDirectory>${project.build.directory}/${project.build.finalName}</warSourceDirectory>
+		<!-- <path>/usr/share/tomcat7/webapps/ROOT/${project.artifactId}</path> -->
                 <server>localhost</server>
                 <username>manager</username>
                 <password>inviso</password>
