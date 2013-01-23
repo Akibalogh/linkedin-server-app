@@ -1,10 +1,11 @@
 <html>
 <head>
-<script type='text/javascript' src='http://platform.linkedin.com/in.js'>api_key: 34eiwzgyjlyn </script>
+<script type='text/javascript' src='http://platform.linkedin.com/in.js'>
+api_key: 34eiwzgyjlyn
+authorize: true
+</script>
 </head>
 <body onload="onLinkedInLoad()">
-
-<script type='IN/Login'></script>
 
 <script type="text/javascript">
 function onLinkedInLoad() {
@@ -43,6 +44,10 @@ function setLoginBadge(profile) {
 }
 </script>
 
-<!-- <a href="servlet/LinkedInLogin">Link to LinkedIn Login</a> -->
+<!-- <a href="servlet/LinkedInLogin">Link to LinkedIn Login script</a> -->
+
+<div id="loginbadge"><p></p>
+</div>
+
 </body>
 </html>
