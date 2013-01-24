@@ -1,5 +1,6 @@
 	<html>
 	<head>
+	<title>LinkedIn Login</title>
 	<script type='text/javascript' src='http://platform.linkedin.com/in.js'>
 	api_key: 34eiwzgyjlyn
 	authorize: true
