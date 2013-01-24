@@ -1,49 +1,73 @@
 package com.generationanalytics.app;
+
 import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 
-/*
-import org.scribe.builder.*;
-import org.scribe.builder.api.*;
-import org.scribe.model.*;
-import org.scribe.oauth.*;
-*/
+import java.util.Properties;
+
+import com.google.code.linkedinapi.schema.Person;
+import com.google.code.linkedinapi.client.oauth.LinkedInOAuthService;
+import com.google.code.linkedinapi.client.oauth.LinkedInOAuthServiceFactory;
+import com.google.code.linkedinapi.client.oauth.LinkedInRequestToken;
+import com.google.code.linkedinapi.client.oauth.LinkedInAccessToken;
+import com.google.code.linkedinapi.client.LinkedInApiClient;
+import com.google.code.linkedinapi.client.LinkedInApiClientFactory;
 
 @SuppressWarnings("serial")
 public class LinkedInLogin extends HttpServlet {
 
-	public void doGet(HttpServletRequest request, HttpServletResponse response)
+	private static final String CONSUMER_KEY="lffo6yr4wx9t";
+	private static final String CONSUMER_SECRET="ns8Br5H7hREyRCQq";
+
+	private static String tokenValue;
+	private static String tokenSecret;
+
+
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
     throws IOException, ServletException
     {
-    	response.setContentType("text/html");
+	String callbackUrl = "http://50.22.200.186:8080/servlet/LinkedInLogin";
+	Properties systemSettings = System.getProperties();
+	// systemSettings.put("http.proxyHost", "proxy");
+	// systemSettings.put("http.proxyPort", "8080");
+	response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        out.println("<html>");
-        out.println("<head>");
-        //out.println("<script type='text/javascript' src='http://platform.linkedin.com/in.js'>");
-        //out.println("api_key: 34eiwzgyjlyn </script>");
-        out.println("</head>");
+	out.println("<html>");
         out.println("<body>");
-        //out.println("<script type='in/Login'>");
-        //out.println("Hello, <?js= firstName ?> <?js= lastName ?>.");
-        //out.println("</script>");
- 
-        //out.println("<script type='IN/Login' data-onAuth='demoLoginTagAuthCapture' data-onLogout='demoLoginTagLogoutCapture'>");
-        out.println("<p>You are logged in and authorized.</p>");
-        //out.println("</script>");
-        
-        
-    	/* OAuthService service = new ServiceBuilder()
-        .provider(LinkedInApi.class)
-        .apiKey("lffo6yr4wx9t")
-        .apiSecret("ns8Br5H7hREyRCQq")
-        .build();
-    
-    	Token requestToken = service.getRequestToken();
-    	
-    	out.println(service.getAuthorizationUrl(requestToken));
-    	*/
-    	
+
+	final LinkedInOAuthService oauthService = LinkedInOAuthServiceFactory.getInstance().createLinkedInOAuthService(CONSUMER_KEY, CONSUMER_SECRET);
+
+	LinkedInRequestToken requestToken = oauthService.getOAuthRequestToken(callbackUrl);
+	// LinkedInRequestToken requestToken = oauthService.getOAuthRequestToken();
+
+	String oauthVerifier = request.getParameter("oauth_verifier");
+	
+	if (oauthVerifier == null)
+	{ 
+		String authUrl = requestToken.getAuthorizationUrl();
+		response.sendRedirect(authUrl);
+	}
+
+	out.println("request token:");
+	out.println("<br>auth URL: " + requestToken.getAuthorizationUrl());
+	out.println("<br>token: " + requestToken.getToken());
+	out.println("<br>token secret: " + requestToken.getTokenSecret());
+	out.println("<br>expiration time: " + requestToken.getExpirationTime());
+
+/*
+	LinkedInAccessToken accessToken = oauthService.getOAuthAccessToken(requestToken, oauthVerifier);
+
+
+	final LinkedInApiClientFactory factory = LinkedInApiClientFactory.newInstance(CONSUMER_KEY, CONSUMER_SECRET);
+	final LinkedInApiClient client = factory.createLinkedInApiClient(accessToken);
+
+
+	Person profile = client.getProfileForCurrentUser();
+
+	out.println("Fetching profile for current user");
+	out.println("Headline: " + profile.getHeadline());
+*/
     	out.println("</body>");
         out.println("</html>");
     
