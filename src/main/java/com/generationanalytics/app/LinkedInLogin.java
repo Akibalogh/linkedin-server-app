@@ -7,10 +7,7 @@ import javax.servlet.http.*;
 import java.util.Properties;
 
 import com.google.code.linkedinapi.schema.Person;
-import com.google.code.linkedinapi.client.oauth.LinkedInOAuthService;
-import com.google.code.linkedinapi.client.oauth.LinkedInOAuthServiceFactory;
-import com.google.code.linkedinapi.client.oauth.LinkedInRequestToken;
-import com.google.code.linkedinapi.client.oauth.LinkedInAccessToken;
+import com.google.code.linkedinapi.client.oauth.*;
 import com.google.code.linkedinapi.client.LinkedInApiClient;
 import com.google.code.linkedinapi.client.LinkedInApiClientFactory;
 
@@ -44,24 +41,23 @@ public class LinkedInLogin extends HttpServlet {
 	String oauthVerifier = request.getParameter("oauth_verifier");
 	
 	if (oauthVerifier == null)
-	{ 
+	{
 		String authUrl = requestToken.getAuthorizationUrl();
 		response.sendRedirect(authUrl);
 	}
 
-	out.println("request token:");
+	out.println("API key: " + CONSUMER_KEY + "/<br>API secret: " + CONSUMER_SECRET);
+	out.println("<br>request token:");
 	out.println("<br>auth URL: " + requestToken.getAuthorizationUrl());
 	out.println("<br>token: " + requestToken.getToken());
 	out.println("<br>token secret: " + requestToken.getTokenSecret());
 	out.println("<br>expiration time: " + requestToken.getExpirationTime());
 
-/*
 	LinkedInAccessToken accessToken = oauthService.getOAuthAccessToken(requestToken, oauthVerifier);
 
-
+/*
 	final LinkedInApiClientFactory factory = LinkedInApiClientFactory.newInstance(CONSUMER_KEY, CONSUMER_SECRET);
 	final LinkedInApiClient client = factory.createLinkedInApiClient(accessToken);
-
 
 	Person profile = client.getProfileForCurrentUser();
 

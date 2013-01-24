@@ -9,12 +9,18 @@
   <url>http://maven.apache.org</url>
     
   <dependencies>
-  
+
     <dependency>
       <groupId>com.googlecode.linkedin-j</groupId>
       <artifactId>linkedin-j-core</artifactId>
-      <version>1.0.416</version>
+      <version>1.0.417-SNAPSHOT</version>
       <scope>compile</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>oauth.signpost</groupId>
+      <artifactId>signpost-commonshttp4</artifactId>
+      <version>1.2.1.1</version>
     </dependency>
 
     <dependency>
@@ -32,7 +38,16 @@
 	
   </dependencies>
   
-  <build>    
+  <build> 
+    <resources>
+      <resource>
+        <directory>src/main/resources/</directory>
+        <includes>
+          <include>**/*</include>
+        </includes>
+      </resource>
+    </resources>  
+
     <finalName>linkedin-server-app</finalName>
     <plugins>
     	<plugin>
@@ -42,9 +57,9 @@
             <configuration>
             	<source>1.6</source>
                 <target>1.6</target>
-        	</configuration>
+        </configuration>
         </plugin>
-        
+	
     	<plugin>
     		<groupId>org.apache.tomcat.maven</groupId>
     		<artifactId>tomcat7-maven-plugin</artifactId>
@@ -86,7 +101,7 @@
                 		<targetPath>WEB-INF</targetPath>
                 		<filtering>true</filtering>
                 			<includes>
-                    			<include>**/*</include>
+					<include>**/*</include>
                 			</includes>
             		</resource>
         		</webResources>
@@ -96,4 +111,11 @@
     </plugins>
     
   </build>
+  <repositories>
+    <repository>
+	<id>repo</id>
+    	<name>custom repo</name>
+    	<url>${project.baseUri}libs</url>
+    </repository>
+  </repositories>
 </project>
