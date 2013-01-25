@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest
 -------------------------------------------------------------------------------
-Tests run: 63, Failures: 0, Errors: 63, Skipped: 0, Time elapsed: 0.054 sec <<< FAILURE!
+Tests run: 63, Failures: 0, Errors: 63, Skipped: 0, Time elapsed: 0.067 sec <<< FAILURE!
 testGetConnectionsByIdString(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
@@ -194,7 +194,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetNetworkUpdatesDateDate(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
+testGetNetworkUpdatesDateDate(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -218,7 +218,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetNetworkUpdatesSetOfNetworkUpdateType(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
+testGetNetworkUpdatesSetOfNetworkUpdateType(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -242,7 +242,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetNetworkUpdatesIntIntSetOfNetworkUpdateType(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
+testGetNetworkUpdatesIntIntSetOfNetworkUpdateType(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -290,7 +290,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetNetworkUpdatesIntIntDateDateSetOfNetworkUpdateType(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
+testGetNetworkUpdatesIntIntDateDateSetOfNetworkUpdateType(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -314,7 +314,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetNetworkUpdateCommentsString(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
+testGetNetworkUpdateCommentsString(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -338,7 +338,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetProfileByIdString(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
+testGetProfileByIdString(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -362,7 +362,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetProfileByIdStringSetOfProfileField(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
+testGetProfileByIdStringSetOfProfileField(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -386,7 +386,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetProfileByUrlStringProfileType(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
+testGetProfileByUrlStringProfileType(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -410,7 +410,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetProfileByUrlStringProfileTypeSetOfProfileField(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
+testGetProfileByUrlStringProfileTypeSetOfProfileField(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -434,7 +434,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetProfileForCurrentUser(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
+testGetProfileForCurrentUser(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -818,7 +818,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testSearchPeopleMapOfSearchParameterStringListOfParameterOfFacetTypeString(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.004 sec  <<< ERROR!
+testSearchPeopleMapOfSearchParameterStringListOfParameterOfFacetTypeString(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.003 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -866,7 +866,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testSearchPeopleMapOfSearchParameterStringSetOfProfileFieldSetOfFacetFieldIntIntSearchSortOrderListOfParameterOfFacetTypeString(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
+testSearchPeopleMapOfSearchParameterStringSetOfProfileFieldSetOfFacetFieldIntIntSearchSortOrderListOfParameterOfFacetTypeString(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -890,7 +890,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testLikePost(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.002 sec  <<< ERROR!
+testLikePost(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -1082,7 +1082,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testSearchJobsMapOfSearchParameterStringSetOfJobFieldIntIntSearchSortOrder(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testSearchJobsMapOfSearchParameterStringSetOfJobFieldIntIntSearchSortOrder(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -1106,7 +1106,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testSearchJobsMapOfSearchParameterStringSetOfJobFieldIntIntSearchSortOrderListOfParameterOfFacetTypeString(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testSearchJobsMapOfSearchParameterStringSetOfJobFieldIntIntSearchSortOrderListOfParameterOfFacetTypeString(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -1130,7 +1130,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testSearchJobsMapOfSearchParameterStringSetOfJobFieldSetOfFacetFieldIntIntSearchSortOrder(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testSearchJobsMapOfSearchParameterStringSetOfJobFieldSetOfFacetFieldIntIntSearchSortOrder(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -1250,7 +1250,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetCompaniesByEmailDomainStringSetOfCompanyField(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
+testGetCompaniesByEmailDomainStringSetOfCompanyField(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -1274,7 +1274,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetCompanyByIdStringSetOfCompanyField(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
+testGetCompanyByIdStringSetOfCompanyField(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -1298,7 +1298,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetCompanyByUniversalNameStringSetOfCompanyField(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
+testGetCompanyByUniversalNameStringSetOfCompanyField(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -1322,7 +1322,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetCompanyProductsStringSetOfProductFieldIntInt(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testGetCompanyProductsStringSetOfProductFieldIntInt(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -1346,7 +1346,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetFollowedCompaniesSetOfCompanyField(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testGetFollowedCompaniesSetOfCompanyField(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -1370,7 +1370,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetSuggestedCompaniesSetOfCompanyField(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testGetSuggestedCompaniesSetOfCompanyField(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -1466,7 +1466,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testSearchCompaniesMapOfSearchParameterStringSetOfCompanyFieldSetOfFacetFieldIntIntSearchSortOrderListOfParameterOfFacetTypeString(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
+testSearchCompaniesMapOfSearchParameterStringSetOfCompanyFieldSetOfFacetFieldIntIntSearchSortOrderListOfParameterOfFacetTypeString(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.004 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)
@@ -1490,7 +1490,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linke
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testUnfollowCompany(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testUnfollowCompany(com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.AsyncLinkedInApiClientTest.setUp(AsyncLinkedInApiClientTest.java:46)

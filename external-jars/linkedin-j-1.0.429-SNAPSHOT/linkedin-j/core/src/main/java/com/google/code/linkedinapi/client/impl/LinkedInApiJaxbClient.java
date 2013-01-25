@@ -123,6 +123,8 @@ public class LinkedInApiJaxbClient extends BaseLinkedInApiClient {
      */
 	protected JAXBContext getJaxbContext() throws JAXBException {
 		if (JAXB_CONTEXT == null ) {
+			Thread.currentThread().setContextClassLoader(
+				this.getClass().getClassLoader()); // Modified from original
 			JAXB_CONTEXT = JAXBContext.newInstance(JAXB_PACKAGE_NAME);
 		}
 		return JAXB_CONTEXT;
