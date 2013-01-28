@@ -14,6 +14,15 @@
 		<servlet-name>LinkedInLogin</servlet-name>
 		<url-pattern>/servlet/LinkedInLogin</url-pattern>
 	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LinkedInCallback</servlet-name>
+		<servlet-class>com.generationanalytics.app.LinkedInCallback</servlet-class>
+	</servlet>
 	
+	<servlet-mapping>
+		<servlet-name>LinkedInCallback</servlet-name>
+		<url-pattern>/servlet/LinkedInCallback</url-pattern>
+	</servlet-mapping>
 </web-app>
 
