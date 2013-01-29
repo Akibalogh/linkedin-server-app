@@ -67,7 +67,18 @@
                 <target>1.6</target>
         </configuration>
         </plugin>
-	
+
+	<plugin>
+		<groupId>com.googlecode.t7mp</groupId>
+		<artifactId>maven-t7-plugin</artifactId>
+		<version>0.9.6</version>
+		<configuration>
+			<tomcatVersion>7.0.33</tomcatVersion>
+			<tomcatConfigDirectory>/usr/share/tomcat7/conf</tomcatConfigDirectory>
+		</configuration>
+	</plugin>
+
+	<!--
     	<plugin>
     		<groupId>org.apache.tomcat.maven</groupId>
     		<artifactId>tomcat7-maven-plugin</artifactId>
@@ -75,43 +86,43 @@
     		<configuration>
     			<url>http://localhost:8080/manager/text</url>
       			<update>true</update>
-                <warFile>target/${project.artifactId}.war</warFile>
+                	<warFile>target/${project.artifactId}.war</warFile>
 				<warSourceDirectory>${project.build.directory}/${project.build.finalName}</warSourceDirectory>
 				<path>ROOT/${project.artifactId}</path>
-				<server>localhost</server>
-                <username>manager</username>
-                <password>inviso</password>
+				<server>tomcat7-server</server>
+                		<username>manager</username>
+                		<password>Generation1234!</password>
    	    	</configuration>
-    	</plugin>
-    	
-    	
+    	</plugin>    	
+	-->
+
     	<plugin>
     		<groupId>org.apache.maven.plugins</groupId>
     		<artifactId>maven-war-plugin</artifactId>
     		<version>2.3</version>
     		
     		<configuration>
+			<outputDirectory>/usr/share/tomcat7/webapps</outputDirectory>
     			<archive>
             		<manifest>
               			<addClasspath>true</addClasspath>
             		</manifest>
-          		</archive>
-    		
- 				<nonFilteredFileExtensions>
-	  				<nonFilteredFileExtension>pdf</nonFilteredFileExtension>
-  					<nonFilteredFileExtension>png</nonFilteredFileExtension>
-  					<nonFilteredFileExtension>gif</nonFilteredFileExtension>
-  					<nonFilteredFileExtension>jsp</nonFilteredFileExtension>
- 				</nonFilteredFileExtensions>
- 				<webResources>
-            		<resource>
+          		</archive>	
+ 			  <nonFilteredFileExtensions>
+	  		    <nonFilteredFileExtension>pdf</nonFilteredFileExtension>
+  			    <nonFilteredFileExtension>png</nonFilteredFileExtension>
+  			    <nonFilteredFileExtension>gif</nonFilteredFileExtension>
+  			    <nonFilteredFileExtension>jsp</nonFilteredFileExtension>
+ 			  </nonFilteredFileExtensions>
+ 			<webResources>
+            		  <resource>
                 		<directory>src/main/webapp/</directory>
                 		<targetPath>WEB-INF</targetPath>
                 		<filtering>true</filtering>
                 			<includes>
 					<include>**/*</include>
                 			</includes>
-            		</resource>
+            		  </resource>
         		</webResources>
     		</configuration>
     		
