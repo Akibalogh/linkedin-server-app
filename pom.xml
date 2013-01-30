@@ -68,17 +68,19 @@
         </configuration>
         </plugin>
 
+	<!-- Not using T7 to right now
 	<plugin>
 		<groupId>com.googlecode.t7mp</groupId>
 		<artifactId>maven-t7-plugin</artifactId>
 		<version>0.9.6</version>
 		<configuration>
 			<tomcatVersion>7.0.33</tomcatVersion>
-			<tomcatConfigDirectory>/usr/share/tomcat7/conf</tomcatConfigDirectory>
+			<tomcatConfigDirectory>/opt/tomcat7/conf</tomcatConfigDirectory>
 		</configuration>
 	</plugin>
+	-->
 
-	<!--
+	<!-- Not using tomcat7-maven-plugin right now
     	<plugin>
     		<groupId>org.apache.tomcat.maven</groupId>
     		<artifactId>tomcat7-maven-plugin</artifactId>
@@ -102,7 +104,7 @@
     		<version>2.3</version>
     		
     		<configuration>
-			<outputDirectory>/usr/share/tomcat7/webapps</outputDirectory>
+			<outputDirectory>/opt/tomcat7/webapps</outputDirectory>
     			<archive>
             		<manifest>
               			<addClasspath>true</addClasspath>
