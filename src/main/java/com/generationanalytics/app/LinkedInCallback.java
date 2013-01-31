@@ -45,8 +45,9 @@ public class LinkedInCallback extends HttpServlet {
 	Token accessToken = service.getAccessToken(requestToken, verifier);
 
 	OAuthRequest apiRequest = new OAuthRequest(Verb.GET, PROTECTED_RESOURCE_URL);
-	// Set a header to tell the server to return JSON
-	apiRequest.addHeader("x-li-format", "json");
+	// Disabled: Set a header to tell the server to return JSON
+	// Currently request returns XML
+	// apiRequest.addHeader("x-li-format", "json");
 	service.signRequest(accessToken, apiRequest);
 	Response apiResponse = apiRequest.send();
 

@@ -56,10 +56,10 @@
       </resource>
     </resources>  
 
-    <finalName>linkedin-server-app</finalName>
+    <finalName>${project.artifactId}</finalName>
     <plugins>
     	<plugin>
-        	<groupId>org.apache.maven.plugins</groupId>
+            <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.0</version>
             <configuration>
@@ -80,23 +80,19 @@
 	</plugin>
 	-->
 
-	<!-- Not using tomcat7-maven-plugin right now
     	<plugin>
     		<groupId>org.apache.tomcat.maven</groupId>
     		<artifactId>tomcat7-maven-plugin</artifactId>
     		<version>2.0</version>
     		<configuration>
-    			<url>http://localhost:8080/manager/text</url>
+    			<url>http://localhost:8080/manager/html</url>
+			<port>8080</port>
       			<update>true</update>
-                	<warFile>target/${project.artifactId}.war</warFile>
-				<warSourceDirectory>${project.build.directory}/${project.build.finalName}</warSourceDirectory>
-				<path>ROOT/${project.artifactId}</path>
-				<server>tomcat7-server</server>
-                		<username>manager</username>
-                		<password>Generation1234!</password>
+			<!-- <path>/${project.artifactId}</path> --> <!-- Context path -->
+			<path>/</path>
+			<server>tomcat7</server>
    	    	</configuration>
     	</plugin>    	
-	-->
 
     	<plugin>
     		<groupId>org.apache.maven.plugins</groupId>
@@ -104,7 +100,7 @@
     		<version>2.3</version>
     		
     		<configuration>
-			<outputDirectory>/opt/tomcat7/webapps</outputDirectory>
+			<!-- <outputDirectory>/opt/tomcat7/webapps</outputDirectory> -->
     			<archive>
             		<manifest>
               			<addClasspath>true</addClasspath>
