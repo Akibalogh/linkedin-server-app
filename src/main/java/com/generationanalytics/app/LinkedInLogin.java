@@ -23,7 +23,7 @@ public class LinkedInLogin extends HttpServlet {
 		.provider(LinkedInApi.class)
 		.apiKey(CONSUMER_KEY)
 		.apiSecret(CONSUMER_SECRET)
-		.scope("r_fullprofile,r_emailaddress")
+		.scope("r_basicprofile,r_fullprofile,r_emailaddress")
 		.callback(callbackUrl)
 		.build();
 
