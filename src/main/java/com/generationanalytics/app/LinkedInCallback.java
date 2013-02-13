@@ -17,8 +17,9 @@ public class LinkedInCallback extends HttpServlet {
 
 	private static final String CONSUMER_KEY="34eiwzgyjlyn";
 	private static final String CONSUMER_SECRET="Oo0P0QU0oBaIYs9W";
-	private static String PROTECTED_RESOURCE_URL = "http://api.linkedin.com/v1/people/~:(id,first-name,last-name,industry,summary,specialties,positions,email-address,associations,honors,interests,publications,skills,twitter-accounts)";
+	private static String PROTECTED_RESOURCE_URL = "http://api.linkedin.com/v1/people/~:(id,first-name,last-name,location,public-profile-url,industry,summary,specialties,positions,email-address,associations,honors,interests,publications,skills,twitter-accounts)";
 	private static String profile;
+	private static String ApiResponseStr;
 
 	private static final String OUTPATH = "/usr/share/downloaded-li-profiles";
 	private static String outFileName;
@@ -27,7 +28,7 @@ public class LinkedInCallback extends HttpServlet {
     throws IOException, ServletException
     {
 	response.setContentType("text/html");
-	profile += "<html>\n";
+	profile = "<html>\n";
         profile += "<body>\n";
 
 	OAuthService service = new ServiceBuilder()
@@ -51,13 +52,14 @@ public class LinkedInCallback extends HttpServlet {
 	service.signRequest(accessToken, apiRequest);
 	Response apiResponse = apiRequest.send();
 
-	profile += apiResponse.getBody() + "\n";
+	ApiResponseStr = apiResponse.getBody();
+	profile += ApiResponseStr + "\n";
 	profile += "</body>\n";
         profile += "</html>";
        
 	// Write the API response to the user
 	PrintWriter outHTML = response.getWriter();
-	outHTML.println("Thanks! We'll be sending you emails going forward.");
+	outHTML.println("Success! Biffle will send you an email every day at 7AM going forward<br>");
 
 	// The timestamp will be used to name the file
 	java.util.Date date = new java.util.Date();
@@ -68,7 +70,7 @@ public class LinkedInCallback extends HttpServlet {
 	FileWriter fstream = new FileWriter(outFile);
 	BufferedWriter fout = new BufferedWriter(fstream);
 
-	fout.write(profile);
+	fout.write(ApiResponseStr);
 	fout.close();
 	}
 }
