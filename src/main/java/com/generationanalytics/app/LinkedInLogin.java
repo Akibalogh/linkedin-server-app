@@ -18,7 +18,7 @@ public class LinkedInLogin extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
     throws IOException, ServletException
     {
-	String callbackUrl = "http://50.22.200.186:8080/servlet/LinkedInCallback";
+	String callbackUrl = "http://biffle.co:8080/servlet/LinkedInCallback";
 	OAuthService service = new ServiceBuilder()
 		.provider(LinkedInApi.class)
 		.apiKey(CONSUMER_KEY)

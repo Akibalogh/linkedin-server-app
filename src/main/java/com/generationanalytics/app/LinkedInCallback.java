@@ -1,5 +1,8 @@
 package com.generationanalytics.app;
 
+import com.generationanalytics.app.SendMail;
+import com.generationanalytics.app.EmailAddressParser;
+
 import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -12,6 +15,8 @@ import org.scribe.builder.api.LinkedInApi;
 import org.scribe.model.*;
 import org.scribe.oauth.OAuthService;
 
+import javax.xml.stream.*;
+
 @SuppressWarnings("serial")
 public class LinkedInCallback extends HttpServlet {
 
@@ -21,7 +26,8 @@ public class LinkedInCallback extends HttpServlet {
 	private static String profile;
 	private static String ApiResponseStr;
 
-	private static final String OUTPATH = "/usr/share/downloaded-li-profiles";
+	private static final String PROFILEOUTPATH = "/usr/share/downloaded-li-profiles";
+	private static final String SUCCESSPAGE = "http://biffle.co:8080/success.jsp";
 	private static String outFileName;
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -57,20 +63,43 @@ public class LinkedInCallback extends HttpServlet {
 	profile += "</body>\n";
         profile += "</html>";
        
-	// Write the API response to the user
-	PrintWriter outHTML = response.getWriter();
-	outHTML.println("Success! Biffle will send you an email every day at 7AM going forward<br>");
-
-	// The timestamp will be used to name the file
+	// Get timestamp to name the file on disk
 	java.util.Date date = new java.util.Date();
 	outFileName = String.valueOf(date.getTime());
 	
 	// Write the API response to a file
-	File outFile = new File(OUTPATH + "/" + outFileName);
+	File outFile = new File(PROFILEOUTPATH + "/" + outFileName);
 	FileWriter fstream = new FileWriter(outFile);
 	BufferedWriter fout = new BufferedWriter(fstream);
 
 	fout.write(ApiResponseStr);
 	fout.close();
+	
+	// Redirect the user to the success page
+	PrintWriter outHTML = response.getWriter();
+	//outHTML.println("Success! Biffle will send you an email every day at 7AM going forward<br>");
+	response.sendRedirect(SUCCESSPAGE);
+	try
+	{
+		EmailAddressParser emailAddressParser = new EmailAddressParser();
+		String emailAddress = emailAddressParser.parseEmailAddress(ApiResponseStr);
+
+		SendMail sendMail = new SendMail();
+		sendMail.sendThankYou(emailAddress);
+	}
+
+	catch (XMLStreamException xe)
+	{ 
+		outHTML.println("ERROR: XML Exception");
+		xe.printStackTrace(outHTML);
+	}
+
+	catch (Exception e)
+	{
+		outHTML.println("ERROR: Exception");
+		e.printStackTrace(outHTML);
+	}
+	
+	
 	}
 }
