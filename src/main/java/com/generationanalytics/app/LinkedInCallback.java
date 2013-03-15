@@ -26,7 +26,7 @@ public class LinkedInCallback extends HttpServlet {
 	private static String profile;
 	private static String ApiResponseStr;
 
-	private static final String PROFILEOUTPATH = "/usr/share/downloaded-li-profiles";
+	private static final String PROFILEOUTPATH = "/data/profiles";
 	private static final String SUCCESSPAGE = "http://biffle.co:8080/success.jsp";
 	private static String outFileName;
 
