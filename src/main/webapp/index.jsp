@@ -66,7 +66,13 @@
 
         <a name="fluidity"></a>
 
-        <h1>Biffle emails you interesting tech articles</h1><br>
+        <h1>Biffle emails you tech articles based on your interests</h1>
+		<h2><ul>
+		<li>Find out about new technologies</li>
+		<li>Don't miss out on important new developments</li>
+		<li>Conquer information overload</li>
+		</ul></h2>
+		
         <h3>Biffle is not open to the public yet but you can login below for an early sneak peek</h3>
 
         <p>
